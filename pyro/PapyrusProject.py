@@ -773,8 +773,8 @@ class PapyrusProject(ProjectBase):
                 if self.optimize:
                     arguments.append('-op')
 
-        arg_s = arguments.join()
-        commands.append(arg_s)
+                arg_s = arguments.join()
+                commands.append(arg_s)
 
         return len(psc_paths.keys()), commands
 
