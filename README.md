@@ -5,7 +5,7 @@
 
 Latest build from master branch:
 
-[![](https://github.com/fireundubh/pyro/workflows/GitHub%20CI/badge.svg)](https://github.com/fireundubh/pyro/actions)
+[![](https://github.com/fireundubh/pyro/workflows/GitHub%20CI/badge.svg)](https://github.com/JDGBOLT/pyro/actions)
 
 See also: [Releases](https://github.com/fireundubh/pyro/releases)
 
