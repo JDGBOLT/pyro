@@ -154,6 +154,9 @@ class ProjectBase:
                 return self.options.game_path
             return os.path.join(os.getcwd(), self.options.game_path)
 
+        if os.path.join(os.path.dirname(os.path.dirname(self.project_path)), "Stock Game"):
+            return os.path.join(os.path.dirname(os.path.dirname(self.project_path)), "Stock Game")
+
         if sys.platform == 'win32':
             return self.get_installed_path(game_type)
 
