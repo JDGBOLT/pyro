@@ -222,12 +222,6 @@ class PapyrusProject(ProjectBase):
             PapyrusProject.log.error('Failed to build list of import paths')
             sys.exit(1)
 
-        # remove project path, if added by user
-        self.import_paths = [p for p in self.import_paths if not startswith(p, self.project_path, ignorecase=True)]
-
-        # prepend project path
-        self.import_paths.insert(0, self.project_path + os.path.sep + "Source" + os.path.sep + "Scripts")
-
         self.psc_paths = self._get_psc_paths()
         if not self.psc_paths:
             PapyrusProject.log.error('Failed to build list of script paths')
