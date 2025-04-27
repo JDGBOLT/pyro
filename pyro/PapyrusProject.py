@@ -747,6 +747,9 @@ class PapyrusProject(ProjectBase):
 
             if not use_config_file_for_input_paths:
                 arguments.append(object_names, enquote_value=True)
+            
+            arg_s = arguments.join()
+            commands.append(arg_s)
 
         else:
             for object_name, script_path in psc_paths.items():
